@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { AlertTriangle, CheckCircle, FileSearch } from "lucide-react";
 import { analyzeResume } from "../lib/openai";
-import { extractTextFromFile } from "../lib/fileParser";
 import FileUpload from "../components/FileUpload";
 import toast from "react-hot-toast";
 
