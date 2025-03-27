@@ -1,13 +1,11 @@
 import * as pdfjsLib from "pdfjs-dist";
 import mammoth from "mammoth";
-import libre from "libreoffice-convert";
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.mjs`;
 
 export async function extractTextFromFile(file: File): Promise<string> {
 	try {
 		const fileType = file.type.toLowerCase();
-		const arrayBuffer = await file.arrayBuffer();
 
 		// Handle PDF files
 		if (fileType === "application/pdf") {

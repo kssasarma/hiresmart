@@ -36,7 +36,7 @@ const Register = () => {
       <div className="w-full max-w-md space-y-8 rounded-xl bg-white p-8 shadow-lg">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-gray-900">Create an account</h2>
-          <p className="mt-2 text-gray-600">Start your journey with ResumeAI</p>
+          <p className="mt-2 text-gray-600">Start your journey with HireSmart</p>
         </div>
         <form onSubmit={handleRegister} className="mt-8 space-y-6">
           <div className="space-y-4">
